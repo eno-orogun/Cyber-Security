@@ -16,6 +16,8 @@ The first challenge I faced was trying to configure the Ubuntu server. I downloa
 Another challenge I faced was issues configuring the IP address for Bitnami web application server.  I made a mistake in creating the match file for the IP address as I when specifying the address name I named it as “address” rather than “Address” and this made the file not save. Whenever I tried to display the address I had created using the command “ip addr” I received an error. I therefore troubleshot and discovered the error I made and resolved it by amending the letter a to a capital a.
 
 Network Diagram
+<img src="https://github.com/eorogun/Cyber-Security/blob/main/Network%20Diagram.jpg" alt="Network Diagram" />
+
 
 
 
