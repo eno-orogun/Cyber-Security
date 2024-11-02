@@ -80,7 +80,7 @@
                 I connected the Ubuntu Desktop to the Ubuntu Server, which serves as the default gateway to the Bitnami WordPress web application server. I then checked that they could communicate with each other by pinging from each machine.
                 The first challenge I faced was trying to configure the Ubuntu Server. I downloaded and installed it onto the virtual machine (VirtualBox), but I was unable to configure the IP addresses. I resolved this issue by removing it entirely from VirtualBox and reinstalling Ubuntu Server during the installation process, which no longer posed an issue for me.
                 Another challenge I faced was configuring the IP address for the Bitnami web application server. I made a mistake in creating the match file for the IP address; when specifying the address name, I named it "address" rather than "Address," which caused the file not to save. Whenever I tried to display the address I had created using the command “ip addr,” I received an error. I troubleshot the issue, discovered my error, and resolved it by changing the lowercase "a" to an uppercase "A."
-            </p>
+            </p> 
             <h1>Network Diagram</h1>
             <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Network%20Diagram.jpg" alt="Network Diagram" />
         </div>
