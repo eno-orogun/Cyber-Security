@@ -63,7 +63,7 @@
             <p>
                 The aim of this project is to create a private sandbox network consisting of three machines which are isolated from the real-world network, avoiding risks to live systems while simulating real-world network scenarios. The network consists of multiple virtual machines (VMs) using VirtualBox. The VMs are configured within a private IP address range (192.168.27.1 to 192.168.27.10). The networking concepts such as IP subnetting, network interface configuration, design, server setup, planning, and organizational strategies were applied.
             </p>
-            <h1>Configuration</h1>
+            <h1 class="left-align">Configuration</h1>
             <p>
                 For the virtual machines, I chose to use Ubuntu Desktop for the desktop environment, Ubuntu Server for the gateway router, and Bitnami WordPress for the web application server.
             </p>
@@ -81,7 +81,7 @@
                 The first challenge I faced was trying to configure the Ubuntu Server. I downloaded and installed it onto the virtual machine (VirtualBox), but I was unable to configure the IP addresses. I resolved this issue by removing it entirely from VirtualBox and reinstalling Ubuntu Server during the installation process, which no longer posed an issue for me.
                 Another challenge I faced was configuring the IP address for the Bitnami web application server. I made a mistake in creating the match file for the IP address; when specifying the address name, I named it "address" rather than "Address," which caused the file not to save. Whenever I tried to display the address I had created using the command “ip addr,” I received an error. I troubleshot the issue, discovered my error, and resolved it by changing the lowercase "a" to an uppercase "A."
             </p> 
-            <h1>Network Diagram</h1>
+            <h1 class="left-align">Network Diagram</h1>
             <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Network%20Diagram.jpg" alt="Network Diagram" />
         </div>
         <div class="column">
