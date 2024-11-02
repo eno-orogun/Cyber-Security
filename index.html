@@ -52,7 +52,7 @@
 <body>
     <h1 style="text-align: center;">A Private Sandbox Network</h1>
 
-<h1 style="text-align:left;">Project Aims</h1>
+<h1 class="left-align">Project Aims</h1>
 <p>
     The aim of this project is to create a private sandbox network consisting of three machines which are isolated from the real-world network, avoiding risks to live systems while simulating real-world network scenarios. The network consists of multiple virtual machines (VMs) using VirtualBox. The VMs are configured within a private IP address range (192.168.27.1 to 192.168.27.10). The networking concepts such as IP subnetting, network interface configuration, design, server setup, planning, and organizational strategies were applied.
 </p>
@@ -60,16 +60,16 @@
 <h1>Configuration</h1>
 <p>
     For the virtual machines, I chose to use Ubuntu Desktop for the desktop environment, Ubuntu Server for the gateway router, and Bitnami WordPress for the web application server.
-</p>
-<p>
+
+
     I used Ubuntu Desktop as it is a secure operating system that is commonly used and comes with the latest technologies, such as applications, libraries, and toolchains. Ubuntu Desktop also provides better performance compared to Windows.
-</p>
-<p>
+
+
     I used Ubuntu Server as my gateway router, as it comes with many benefits. It is easily customizable, allowing you to install the packages you require. It is compatible with a large variety of hardware and software and has built-in security to protect against vulnerabilities and threats.
-</p>
-<p>
+
+
     I used Bitnami WordPress for the web application server as it is a free, open-source application that is already pre-configured, providing the required components. It simplifies management, making updates and administration via the Bitnami interface straightforward.
-</p>
+
 <p>
    I connected the Ubuntu Desktop to the Ubuntu Server, which serves as the default gateway to the Bitnami WordPress web application server. I then checked that they could communicate with each other by pinging from each machine.
    The first challenge I faced was trying to configure the Ubuntu Server. I downloaded and installed it onto the virtual machine (VirtualBox), but I was unable to configure the IP addresses. I resolved this issue by removing it entirely from VirtualBox and reinstalling Ubuntu Server during the installation process, which no longer posed an issue for me.
