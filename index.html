@@ -104,9 +104,22 @@
             <p>enp0s3 configuration below:</p>
 
             <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20Config.jpg" alt="Ubuntu Desktop Ethernet Setting" />
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20Config.jpg" alt="Ubuntu Desktop IPv4 Setting" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20IPv4%20Config.jpg" alt="Ubuntu Desktop IPv4 Setting" />
             
-            
+            <p>I configured one Ethernet Adapter to enable the VM to connect to the network which allows communication with other devices and other VMs.  It acts as a service host enabling clients to access services such as the Bitnami web application server which is connected to the network. For performance monitoring of network traffic,
+            the Ethernet adapter is able to pinpoint performance issues, bottlenecks and as well as optimize the VM’s network usage</p>
+
+            <h1 class="left-align"> Ubuntu Server 24.04 gateway router </h1> 
+            <p>Three network adapters were configured for the gateway router, two internal network adapters and one NAT 
+                (network access translation). The two internal network adapters are used to create distinct internal network and 
+                this segmentation enhances management of applications and services. </p> 
+
+            <p>Separate internal network adapters isolated the different services, reducing the risk of lateral movement in case 
+                there was a security breach </p>
+
+            <p>The NAT adapter empowers the VM to have access to the internet and still keeping the internal networks isolated. 
+                Which enables the VMs to download updates or communicate with external services preventing exposure to the internal 
+                environment. </p>
         </div>
         <div class="column">
             <h2></h2>
