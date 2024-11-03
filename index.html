@@ -111,20 +111,36 @@
 
             <h1 class="left-align"> Ubuntu Server 24.04 gateway router </h1> 
             <p>Three network adapters were configured for the gateway router, two internal network adapters and one NAT 
-                (network access translation). The two internal network adapters are used to create distinct internal network and 
-                this segmentation enhances management of applications and services. </p> 
+            (network access translation). The two internal network adapters are used to create distinct internal network and 
+            this segmentation enhances management of applications and services. </p> 
 
             <p>Separate internal network adapters isolated the different services, reducing the risk of lateral movement in case 
-                there was a security breach </p>
+            there was a security breach </p>
 
             <p>The NAT adapter empowers the VM to have access to the internet and still keeping the internal networks isolated. 
-                Which enables the VMs to download updates or communicate with external services preventing exposure to the internal 
-                environment. </p>
+            Which enables the VMs to download updates or communicate with external services preventing exposure to the internal 
+            environment. </p>
             
            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%201.jpg" alt="Ubuntu Server Adapter 1 Setting" />
            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%202.jpg" alt="Ubuntu Server Adapter 2 Setting" />
            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%203.jpg" alt="Ubuntu Server Adapter 3 Setting" />
-       
+
+            <p>Three different Ethernet interfaces were configured for the gateway: enp0s3, enp0s8, enp0s9. </p>
+  
+            <p>The three interfaces were also configured for the Ubuntu gateway router as setting up enp0s3, enp0s8, and enp0s9 as the gateway enables the VM to route traffic between 
+            different networks providing communication between internal devices. </p>
+
+            <p>Assigning the interfaces as the gateway centralizes the network traffic control enabling ease in management of data flow and 
+            implementing policies for security when required. Configuring the interface as the gateway isolated the network traffic, 
+            providing enhanced monitoring and security measures.</p>
+
+            <p>I used multiple interfaces to segment the network traffic e.g one interface for management of traffic while another deals with
+            application data or services.  Distribution of the traffic across different interfaces empowers improvement in network 
+            performance in balancing the network load.</p>
+
+            <p>Redundancy is enabled with the utilization of the multiple interfaces and if one interface fails, the others can continue to 
+            handle traffic.</p>
+            
         </div>
         <div class="column">
             <h2></h2>
