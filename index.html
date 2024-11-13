@@ -98,13 +98,13 @@
             <p>Configuring the internal network adapter simplified the network settings and enabled the management of IP addressing and routing within the internal network without concerns for the external network configurations.</p>
 
             <p>See a screenshot of the adapter below:</p>
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Desktop%20-%20Adapter%201.jpg" alt="Ubuntu Desktop Adapter Setting" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Desktop%20-%20Adapter%201.jpg" alt="Ubuntu Desktop Adapter Setting" />
             
             <p>For the ubuntu Desktop one ethernet was configured: enp0s3</p>
             <p>enp0s3 configuration below:</p>
 
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20Config.jpg" alt="Ubuntu Desktop Ethernet Setting" />
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20IPv4%20Config.jpg" alt="Ubuntu Desktop IPv4 Setting" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20Config.jpg" alt="Ubuntu Desktop Ethernet Setting" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Desktop%20-%20Ethernet%20enp0s3%20IPv4%20Config.jpg" alt="Ubuntu Desktop IPv4 Setting" />
             
             <p>I configured one Ethernet Adapter to enable the VM to connect to the network which allows communication with other devices and other VMs.  It acts as a service host enabling clients to access services such as the Bitnami web application server which is connected to the network. For performance monitoring of network traffic,
             the Ethernet adapter is able to pinpoint performance issues, bottlenecks and as well as optimize the VM’s network usage</p>
@@ -121,9 +121,9 @@
             Which enables the VMs to download updates or communicate with external services preventing exposure to the internal 
             environment. </p>
             
-           <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%201.jpg" alt="Ubuntu Gateway Adapter 1 Setting" />
-           <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%202.jpg" alt="Ubuntu Gateway Adapter 2 Setting" />
-           <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%203.jpg" alt="Ubuntu Gateway Adapter 3 Setting" />
+           <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%201.jpg" alt="Ubuntu Gateway Adapter 1 Setting" />
+           <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%202.jpg" alt="Ubuntu Gateway Adapter 2 Setting" />
+           <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Server%20Gateway%20-%20Adapter%203.jpg" alt="Ubuntu Gateway Adapter 3 Setting" />
 
             <p>Three different Ethernet interfaces were configured for the gateway: enp0s3, enp0s8, enp0s9. </p>
   
@@ -141,27 +141,27 @@
             <p>Redundancy is enabled with the utilization of the multiple interfaces and if one interface fails, the others can continue to 
             handle traffic.</p>
 
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Ubuntu%20Server%20Gateway%20Interfaces%20config.jpg" alt="Ubuntu Gateway Router Interface Setting" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Ubuntu%20Server%20Gateway%20Interfaces%20config.jpg" alt="Ubuntu Gateway Router Interface Setting" />
 
             <h1 class="left-align"> Bitnami WordPress 6.6 Web Application Server </h1> 
             <p>Only one network adapter was configured for the web application server and it was set to inet2 which is a separate internal network for isolation purpose and providing security 
             such as an additional layer of protection against unauthorized access. </p>
 
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Bitnami%20Adapter%20config.jpg" alt="Bitnami Web Application Server Settings" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Bitnami%20Adapter%20config.jpg" alt="Bitnami Web Application Server Settings" />
             <p>Bitnami web application server - Interface Configurations below:</p>
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Bitnami%20Adapter%20INTERFACE%20config.jpg" alt="Bitnami Web Application Server Interface Settings" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Bitnami%20Adapter%20INTERFACE%20config.jpg" alt="Bitnami Web Application Server Interface Settings" />
 
             <h1 class="left-align"> Functional Test Results </h1> 
             <p> All three devices successfully communicated with each other.  See the ping results below. </p>
             <p>Ping Results for Ubuntu Desktop to gateway and Bitnami web application server. </p>
             
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Bitnami%20to%20Desktop%20ping%20results.jpg" alt="Ping Results - Desktop to Gateway Router and Bitnami Server" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Bitnami%20to%20Desktop%20ping%20results.jpg" alt="Ping Results - Desktop to Gateway Router and Bitnami Server" />
 
             <p>Ping Results for Ubuntu gateway to Ubuntu Desktop: </p>
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Bitnami%20to%20Gateway%20%26%20Desktop%20ping%20results.jpg" alt="Ping Results - Ubuntu Gateway Router and Ubuntu Desktop" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Bitnami%20to%20Gateway%20%26%20Desktop%20ping%20results.jpg" alt="Ping Results - Ubuntu Gateway Router and Ubuntu Desktop" />
             
             <p> Ping results for Bitnami web application server to Ubuntu gateway and Ubuntu Desktop:</p>
-            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/blob/gh-pages/Bitnami%20to%20Gateway%20%26%20Desktop%20ping%20results.jpg" alt="Ping Results - Bitnami Server to Ubuntu Gateway and Ubuntu Desktop" />
+            <img src="https://raw.githubusercontent.com/eno-orogun/Cyber-Security/gh-pages/Bitnami%20to%20Gateway%20%26%20Desktop%20ping%20results.jpg" alt="Ping Results - Bitnami Server to Ubuntu Gateway and Ubuntu Desktop" />
            
         </div>
         <div class="column">
